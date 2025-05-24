@@ -100,9 +100,14 @@ export function SignInView() {
           }}
         >
           Don’t have an account?
-          <Link variant="subtitle2" sx={{ ml: 0.5 }}>
-            Get started
-          </Link>
+          <Link
+  component={RouterLink}
+  to="/"
+  variant="subtitle2"
+  sx={{ ml: 0.5 }}
+>
+  Sign in
+</Link>
         </Typography>
       </Box>
       {renderForm}
